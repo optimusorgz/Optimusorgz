@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <!-- navigation  -->
+  <nav class="navbar">
+    <div class="container">
+        <ul class="nav-links left-links">
+            <li><a href="team.html">TEAM</a></li>
+          </ul>
+          <span class="logo">GALLERY</span>
+          <ul class="nav-links right-links">
+          <li><a href="index.html">OPTIMUS</a></li>
+            <li><a href="event.html">EVENT</a></li>
+            <li><a href="#footer">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <ul class="mobile-menu">
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="index.html">OPTIMUS</a></li>
+        <li><a href="event.html">EVENT</a></li>
+        <li><a href="#footer">CONTACT</a></li>
+    </ul>
+</nav>
+
+
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <h2 data-aos="fade-up" data-aos-duration="1000">Optimus Gallery</h2>
+    </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="row"> 
+            <div class="column">
+              <img src="images/download (1).jpeg" style="width:100%">
+              <img src="images/download (2).jpeg" style="width:100%">
+              <img src="images/download (3).jpeg" style="width:100%">
+              <img src="images/download.jpeg" style="width:100%">
+              <img src="images/images (1).jpeg" style="width:100%">
+              <img src="images/images (2).jpeg" style="width:100%">      
+            </div>
+            <div class="column">
+                <img src="images/download.jpeg" style="width:100%">
+                <img src="images/images (1).jpeg" style="width:100%">
+                <img src="images/download (3).jpeg" style="width:100%">
+                <img src="images/download (2).jpeg" style="width:100%">
+                <img src="images/images (2).jpeg" style="width:100%">  
+                <img src="images/download (1).jpeg" style="width:100%">
+            </div>  
+            <div class="column">
+                <img src="images/images (1).jpeg" style="width:100%">
+                <img src="images/download (1).jpeg" style="width:100%">
+                <img src="images/images (2).jpeg" style="width:100%">  
+                <img src="images/download (2).jpeg" style="width:100%">
+                <img src="images/download.jpeg" style="width:100%">
+                <img src="images/download (3).jpeg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="images/download.jpeg" style="width:100%">
+                <img src="images/download (1).jpeg" style="width:100%">
+                <img src="images/images (2).jpeg" style="width:100%">  
+                <img src="images/images (1).jpeg" style="width:100%">
+                <img src="images/download (3).jpeg" style="width:100%">
+                <img src="images/download (2).jpeg" style="width:100%">
+            </div>
+          </div>
+
+          <!-- Modal -->
+          
+          
+          
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<div id="myModal" class="modal" style="display: none;">
+    <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script>
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('modal-img');
+  
+    // Function to open modal on image click
+    document.querySelectorAll('.column img').forEach(img => {
+      img.addEventListener('click', function () {
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+        modalImg.style.height = '100%';
+      });
+    });
+  
+    // Function to close modal
+    function closeModal() {
+      modal.style.display = 'none';
+      modalImg.style.height = '';
+    }
+  
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  </script>
+  
+  
+  
+
+
+  <!-- footer section  -->
+
+  <footer id="footer" class="footer-section">
+    <div class="footer-container" data-aos="fade-up">
+      <div class="footer-logo">
+        <h3>OPTIMUS</h3>
+        <p>Empowering students to innovate, collaborate, and lead. Join us on our mission to make ideas reality through
+          technology and community.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect With Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom" data-aos="fade-up" data-aos-delay="100">
+      <p>© 2025 Optimus Club. All rights reserved.</p>
+      <!-- <p>Designed by <span>NILADRI</span> & <span>RAJ</span></p> -->
+    </div>
+  </footer>
+</body>
+<script src="aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts.js"></script>
+</html>
