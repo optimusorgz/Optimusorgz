@@ -32,22 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-  const hamburger = document.querySelector('.hamburger');
-    const navbar = document.querySelector('.navbar');
-    const mobileMenu = document.querySelector('.mobile-menu'); // Select the mobile menu
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.getElementById('mainNavbar');
 
-    hamburger.addEventListener('click', () => {
-        navbar.classList.toggle('active'); // Toggle the 'active' class on the navbar
-    });
+hamburger.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
 
-    // Optional: Close the mobile menu when a link is clicked
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navbar.classList.remove('active');
-        });
-    });
-
+// Optional: Close the mobile menu when a link is clicked
+const mobileLinks = document.querySelectorAll('.mobile-menu a');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+});
   
   
   

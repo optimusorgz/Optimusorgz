@@ -45,7 +45,7 @@ body {
   height: 50%;
   background: linear-gradient(to right, #00FFFF, #00BFFF);
   border: none;
-  color: white;
+  color: rgba(59, 0, 87, 0.647);
   border-radius: 30px;
   text-decoration: none;
   font-weight: 700;
@@ -84,7 +84,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #4CAF50;
+  color: #00BFFF;
 }
 
 .nav-links a::after {
@@ -94,7 +94,7 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #4CAF50;
+  background-color: #00BFFF;
   transition: width 0.3s ease;
 }
 
@@ -122,7 +122,7 @@ body {
   left: 0;
   width: 2px;
   height: 0;
-  background: #4CAF50;
+  background: #00BFFF;
   transform: translateY(-50%);
   transition: height 0.3s ease;
 }
@@ -134,13 +134,13 @@ body {
   right: 0;
   width: 2px;
   height: 0;
-  background: #4CAF50;
+  background: #00BFFF;
   transform: translateY(-50%);
   transition: height 0.3s ease;
 }
 
 .logo:hover {
-  color: #4CAF50;
+  color: #00BFFF;
   transform: scale(1.05);
 }
 
@@ -168,12 +168,12 @@ body {
   position: absolute;
   top: 80px; /* Adjust based on your navbar height */
   left: 0;
-  /* background-color: #001F3F; */
+  background: linear-gradient(100deg, #38003d, #001b2f);
   width: 100%;
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-menu li {
@@ -193,7 +193,7 @@ body {
 }
 
 .mobile-menu a:hover {
-  color: #4CAF50;
+  color: #00BFFF;
 }
 
 /* Media query for smaller screens */

@@ -6,53 +6,28 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(120deg,
-    #001b2f, 
-    #38003d, 
-    #001b2f, 
-    #37003c,
-    #001b2f, 
-    #37003c 
-    
-  );
-  background-size: 300% 300%; 
-  animation: gradientFlowDark 12s ease infinite; 
+  background: linear-gradient(120deg, #001b2f, #38003d, #001b2f, #37003c, #001b2f, #37003c);
+  background-size: 300% 300%;
+  animation: gradientFlowDark 12s ease infinite;
   margin: 0;
-  height: auto; 
-  min-height: 100vh; 
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
 @keyframes gradientFlowDark {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Navigation stction */
-
 .navbar {
-  background: linear-gradient(120deg,
-  #38003d,
-    #001b2f 
-    
-    
-  );
+  background: linear-gradient(120deg, #38003d, #001b2f);
   color: white;
   height: 80px;
   position: sticky;
   top: 0;
   z-index: 4;
-  left: 0;
-  right: 0;
 }
-
 
 
 .container {
@@ -64,30 +39,29 @@ body {
   height: 100%;
 }
 
-.container img{
+.container img {
   width: 200px;
   margin-right: auto;
   position: relative;
 }
 
-.container button{
+.container button {
   width: 120px;
   height: 50%;
   background: linear-gradient(to right, #00FFFF, #00BFFF);
   border: none;
-  color:  rgba(59, 0, 87, 0.647);
+  color: rgba(59, 0, 87, 0.647);
   border-radius: 30px;
-  text-decoration: none;
   font-weight: 700;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.2px;
-  margin: 0 10px 0 80px ;
+  margin: 0 10px 0 80px;
   margin-left: auto;
   position: relative;
 }
 
-.container button:hover{
+.container button:hover {
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
 }
 
@@ -116,7 +90,6 @@ body {
 .nav-links a:hover {
   color: #00BFFF;
   text-shadow: 0 0 10px rgba(0, 255, 225, 0.5);
-
 }
 
 .nav-links a::after {
@@ -128,7 +101,6 @@ body {
   left: 0;
   background-color: #00BFFF;
   transition: width 0.3s ease;
-
 }
 
 .nav-links a:hover::after {
@@ -172,10 +144,11 @@ body {
   transition: height 0.3s ease;
 }
 
+
 .logo:hover {
   color: #00BFFF;
   transform: scale(1.05);
-  text-shadow: 0 0 10px rgba(0, 255, 225, 0.5);
+  
 }
 
 .logo:hover::before,
@@ -196,12 +169,12 @@ body {
   transition: 0.4s;
 }
 
-/* Styles for the dropdown menu (initially hidden) */
 .mobile-menu {
-  display: none; 
+  display: none;
   position: absolute;
-  top: 80px; 
+  top: 80px;
   left: 0;
+  background: linear-gradient(100deg, #38003d, #001b2f);
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -227,47 +200,43 @@ body {
 
 .mobile-menu a:hover {
   color: #00BFFF;
-  text-shadow: 0 0 20px #00BFFF;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 980px) {
   .container {
-      padding: 0 1rem; /* Adjust container padding for smaller screens */
-  }
-
-  .nav-links ,.logo{
-      display: none; /* Hide the main navigation links */
-  }
-
-  .container button{
-    display: none;
-  }
-
-  .hamburger {
-      display: block; /* Show the hamburger menu */
-  }
-
-  /* Show the mobile menu when the navbar has the 'active' class */
-  .navbar.active .mobile-menu {
-      display: flex;
-  }
-
-  /* Hamburger menu animations when active */
-  .navbar.active .hamburger .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-
-  .navbar.active .hamburger .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  .navbar.active .hamburger .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-  }
+    padding: 0 1rem; /* Adjust container padding for smaller screens */
 }
 
+.nav-links ,.logo{
+    display: none; /* Hide the main navigation links */
+}
 
+.container button{
+  display: none;
+}
+
+.hamburger {
+    display: block; /* Show the hamburger menu */
+}
+
+/* Show the mobile menu when the navbar has the 'active' class */
+.navbar.active .mobile-menu {
+    display: flex;
+}
+
+/* Hamburger menu animations when active */
+.navbar.active .hamburger .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.navbar.active .hamburger .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.active .hamburger .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
 
 /* Main section  */
 
