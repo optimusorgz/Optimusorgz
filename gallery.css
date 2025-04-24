@@ -75,3 +75,21 @@
     cursor: pointer;
     z-index: 6;
   }
+
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    .modal {
+      padding: 20px;
+    }
+  }

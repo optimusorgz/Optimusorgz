@@ -1,23 +1,36 @@
-AOS.init();
-  const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    effect: "fade",
-    fadeEffect: {
-      crossFade: true
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const navbar = document.querySelector('.navbar');
+  
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      navbar.classList.toggle('active');
+    });
+  }
+  
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
   });
+  
+  // Initialize Swiper if it exists
+  if (document.querySelector('.swiper')) {
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  }
+});
 
   const hamburger = document.querySelector('.hamburger');
     const navbar = document.querySelector('.navbar');

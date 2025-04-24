@@ -6,17 +6,54 @@
 
 body {
   font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg,
+    #001b2f, 
+    #38003d, 
+    #001b2f, 
+    #37003c,
+    #001b2f, 
+    #37003c 
+    
+  );
+  background-size: 300% 300%; 
+  animation: gradientFlowDark 12s ease infinite; 
+  margin: 0;
+  height: auto; 
+  min-height: 100vh; 
+  box-sizing: border-box;
 }
 
+@keyframes gradientFlowDark {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Navigation stction */
+
 .navbar {
-  background-color: #001F3F;
+  background: linear-gradient(120deg,
+  #38003d,
+    #001b2f 
+    
+    
+  );
   color: white;
   height: 80px;
   position: sticky;
   top: 0;
   z-index: 4;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
 }
+
+
 
 .container {
   width: 100%;
@@ -29,7 +66,6 @@ body {
 
 .container img{
   width: 200px;
-  /* height: 80%; */
   margin-right: auto;
   position: relative;
 }
@@ -39,7 +75,7 @@ body {
   height: 50%;
   background: linear-gradient(to right, #00FFFF, #00BFFF);
   border: none;
-  color: white;
+  color:  rgba(59, 0, 87, 0.647);
   border-radius: 30px;
   text-decoration: none;
   font-weight: 700;
@@ -78,7 +114,9 @@ body {
 }
 
 .nav-links a:hover {
-  color: #4CAF50;
+  color: #00BFFF;
+  text-shadow: 0 0 10px rgba(0, 255, 225, 0.5);
+
 }
 
 .nav-links a::after {
@@ -88,8 +126,9 @@ body {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #4CAF50;
+  background-color: #00BFFF;
   transition: width 0.3s ease;
+
 }
 
 .nav-links a:hover::after {
@@ -116,7 +155,7 @@ body {
   left: 0;
   width: 2px;
   height: 0;
-  background: #4CAF50;
+  background: #00BFFF;
   transform: translateY(-50%);
   transition: height 0.3s ease;
 }
@@ -128,14 +167,15 @@ body {
   right: 0;
   width: 2px;
   height: 0;
-  background: #4CAF50;
+  background: #00BFFF;
   transform: translateY(-50%);
   transition: height 0.3s ease;
 }
 
 .logo:hover {
-  color: #4CAF50;
+  color: #00BFFF;
   transform: scale(1.05);
+  text-shadow: 0 0 10px rgba(0, 255, 225, 0.5);
 }
 
 .logo:hover::before,
@@ -158,11 +198,10 @@ body {
 
 /* Styles for the dropdown menu (initially hidden) */
 .mobile-menu {
-  display: none; /* Initially hide the mobile menu */
+  display: none; 
   position: absolute;
-  top: 80px; /* Adjust based on your navbar height */
+  top: 80px; 
   left: 0;
-  background-color: #001F3F;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -187,7 +226,8 @@ body {
 }
 
 .mobile-menu a:hover {
-  color: #4CAF50;
+  color: #00BFFF;
+  text-shadow: 0 0 20px #00BFFF;
 }
 
 /* Media query for smaller screens */
@@ -229,14 +269,13 @@ body {
 
 
 
-
+/* Main section  */
 
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #001F3F 0%, #003366 100%);
   padding: 60px 10%;
   color: white;
   min-height: 90vh;
@@ -252,9 +291,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.1) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -312,10 +348,11 @@ body {
 
 .hero-buttons a {
   text-decoration: none;
-  color: white;
+  color: rgb(59, 0, 87);
   background: linear-gradient(45deg, #00BFFF, #00FFFF);
-  padding: 15px 30px;
+  padding: 10px 25px;
   border-radius: 30px;
+  font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease;
   position: relative;
@@ -407,9 +444,11 @@ body {
   }
 }
 
+
+/* What to do section  */
+
 .highlights {
   padding: 100px 10%;
-  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -422,9 +461,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -523,9 +559,11 @@ body {
   }
 }
 
+
+/* Our Mission Section  */
+
 .mission-section {
   padding: 100px 10%;
-  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
   position: relative;
   overflow: hidden;
 }
@@ -537,9 +575,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -727,6 +762,8 @@ body {
   }
 }
 
+/* Gallary Section  */
+
 .swiper-slide img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
@@ -738,7 +775,6 @@ body {
 
 .gallery-section {
   padding: 100px 10%;
-  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
   position: relative;
   overflow: hidden;
 }
@@ -750,9 +786,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.05) 0%, transparent 50%);
   z-index: 1;
 }
 
@@ -897,8 +930,9 @@ body {
   }
 }
 
+/* Footer Section  */
+
 .footer-section {
-  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
   padding: 100px 10% 40px;
   position: relative;
   overflow: hidden;
@@ -911,9 +945,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(0, 255, 255, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 191, 255, 0.08) 0%, transparent 50%);
   z-index: 1;
 }
 

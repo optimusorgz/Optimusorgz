@@ -1,0 +1,19 @@
+src/
+  ├── components/
+  │   ├── Navbar.js
+  │   ├── Hero.js
+  │   ├── Mission.js
+  │   ├── Highlights.js
+  │   ├── Gallery.js
+  │   ├── Footer.js
+  │   └── CoreValues.js
+  ├── pages/
+  │   ├── Home.js
+  │   ├── Team.js
+  │   ├── Gallery.js
+  │   └── Events.js
+  ├── styles/
+  │   ├── styles.css
+  │   ├── gallery.css
+  │   └── event.css
+  └── App.js
