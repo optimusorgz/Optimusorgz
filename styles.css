@@ -196,11 +196,11 @@ body {
       padding: 0 1rem; /* Adjust container padding for smaller screens */
   }
 
-  .nav-links {
+  .nav-links ,.logo{
       display: none; /* Hide the main navigation links */
   }
 
-  .container img,button{
+  .container button{
     display: none;
   }
 
