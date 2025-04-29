@@ -46,6 +46,10 @@ mobileLinks.forEach(link => {
     navbar.classList.remove('active');
   });
 });
+
+// join us link 
   
+const dynamicURL = "https://script.google.com/macros/s/AKfycbwozfJIemTBTOZbuHJHyiv7cSqXf98k1ZHN3NtAiRpxlic_1mj6uuR4DNpInsbf5T1MHg/exec"; // Change only this line
+document.getElementById("dynamic-link").href = dynamicURL;
   
   
