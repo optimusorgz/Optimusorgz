@@ -53,3 +53,4 @@ const dynamicURL = "https://script.google.com/macros/s/AKfycbwozfJIemTBTOZbuHJHy
 document.getElementById("dynamic-link").href = dynamicURL;
   
   
+
