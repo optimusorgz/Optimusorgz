@@ -1,50 +1,76 @@
 # 🚀 Optimus Club Website
 
-This repository contains the source code for the Optimus Club website, a multi-page web application showcasing the club's activities, team, gallery, and events.
+This repository contains the source code for the Optimus Club website, a dynamic multi-page web application showcasing the club's activities, team, gallery, and events.
 
 ## ✨ Features
 
 * **Multi-Page Structure:** Separate pages for Home (`index.html`), Events (`event.html`), Gallery (`gallery.html`), and Team (`team.html`).
-* **Responsive Design:** Adapts to various screen sizes with mobile-friendly navigation.
-* **Modern UI:** Clean design with engaging visuals and animations.
-* **Interactive Elements:** Uses Swiper.js for sliders/carousels and AOS for scroll animations.
-* **Dynamic Gallery:** Interactive image gallery with modal view functionality.
-* **Social Integration:** Links to club's Instagram (@optimus.orgz) and GitHub (optimusorgz).
+* **Responsive Design:** Mobile-first approach with hamburger menu and adaptive layouts.
+* **Modern UI:** Clean design with glassmorphism effects, gradients, and engaging animations.
+* **Interactive Elements:** 
+  * Swiper.js for image carousels and galleries
+  * AOS (Animate On Scroll) for scroll animations
+  * Modal image viewer in gallery
+* **Dynamic Gallery:** Interactive photo gallery with zoom and modal view functionality.
+* **Team Showcase:** Dynamic team member cards with social media links.
+* **Event Management:** Dedicated events page featuring upcoming and past events like OPTIMUS ARENA 2025.
 
 ## 📁 Project Structure
 
 * **HTML Files:**
-  * `index.html`: Main landing page featuring mission, vision, and core values.
-  * `event.html`: Displays club events including "OPTIMUS ARENA 2025".
-  * `gallery.html`: Interactive photo gallery with modal view.
-  * `team.html`: Introduces club members and leadership.
+  * `index.html`: Main landing page featuring mission, vision, and core values
+  * `event.html`: Displays club events and activities
+  * `gallery.html`: Interactive photo gallery with modal view
+  * `team.html`: Introduces club members and leadership
 * **CSS Files:**
-  * `styles.css`: Main stylesheet for common elements and responsive design.
-  * `event.css`: Specific styles for the event page.
-  * `gallery.css`: Specific styles for the gallery page.
-  * `aos.css`: Styles for the AOS animation library.
+  * `styles.css`: Main stylesheet with common components and responsive design
+  * `event.css`: Specific styles for the event page
+  * `gallery.css`: Specific styles for the gallery page
+  * `aos.css`: Animate On Scroll library styles
 * **JavaScript Files:**
-  * `scripts.js`: Custom JavaScript for navigation, Swiper, and AOS initialization.
-  * `aos.js`: The AOS animation library.
+  * `scripts.js`: Handles navigation, animations, and dynamic content
+  * `aos.js`: AOS library functionality
+  * `team.js`: Team member data and dynamic card generation
 * **Assets:**
-  * Various image files for gallery and events.
+  * `images/`: Contains all website images and team photos
 
 ## 🔧 Technologies Used
 
-* HTML5
-* CSS3 (including Flexbox, Grid, Gradients)
-* JavaScript
-* [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) Library
-* [Swiper.js](https://swiperjs.com/) Library
-* [Font Awesome](https://fontawesome.com/) for icons
-* Google Fonts (Orbitron)
+* HTML5 with semantic elements
+* CSS3
+  * Flexbox and Grid layouts
+  * Custom properties
+  * Animations and transitions
+  * Glassmorphism effects
+* JavaScript (ES6+)
+* External Libraries:
+  * [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+  * [Swiper.js](https://swiperjs.com/)
+  * [Font Awesome](https://fontawesome.com/)
+  * Google Fonts (Orbitron)
 
 ## 🌐 Key Sections
 
-* **Home Page:** Features mission statement, vision, core values, and what we do.
-* **Events:** Showcases club events like OPTIMUS ARENA 2025.
-* **Gallery:** Interactive photo gallery of club activities.
-* **Team:** Information about club members and leadership.
+### Home Page
+* Hero section with dynamic call-to-action
+* What We Do: Workshops, Hackathons, Team Projects, Tech Talks
+* Mission & Vision statements
+* Core Values: Innovation, Teamwork, Excellence, Growth, Community Impact, Leadership
+
+### Events Page
+* Current and upcoming events
+* Event details with registration information
+* Past event highlights
+
+### Gallery
+* Responsive image grid
+* Interactive modal viewer
+* Event and activity photographs
+
+### Team
+* Leadership profiles
+* Team member cards with roles
+* Social media connections
 
 ## 🔗 Social Links
 
@@ -53,7 +79,7 @@ This repository contains the source code for the Optimus Club website, a multi-p
 
 ## 🖋️ Authors
 
-Made by optimus tech team
+Made with ❤️ by the Optimus Tech Team
 
 ## 📄 License
 
